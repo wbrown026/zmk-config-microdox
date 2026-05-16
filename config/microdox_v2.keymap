@@ -1,0 +1,42 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+        keymap {
+                compatible = "zmk,keymap";
+
+                default_layer {
+                        bindings = <
+   &kp V  &kp L  &kp H       &kp G       &kp K      &kp Q      &kp F       &kp O       &kp U     &kp J
+   &kp S  &kp R  &mt LALT N  &mt LGUI T  &kp B      &kp Y      &mt LGUI C  &mt LALT A  &kp E     &kp I
+   &kp Z  &kp X  &kp M       &kp D       &kp P      &kp SQT    &kp W       &kp DOT     &kp SEMI  &kp COMMA
+                 &kp ESC     &kp LSHFT   &kp SPACE  &kp LCTRL  &mo 2       &kp TAB
+                        >;
+                };
+
+                symbol_layer {
+                        bindings = <
+   &kp GRAVE  &kp TILDE  &kp HASH   &kp AMPS   &kp PIPE  &kp CARET  &kp LBRC   &kp RBRC  &kp LBKT   &kp RBKT
+   &kp EXCL   &kp UNDER  &kp COLON  &kp EQUAL  &kp DLLR  &kp AT     &kp LPAR   &kp RPAR  &kp UNDER  &kp SEMI
+   &kp PRCNT  &kp QMARK  &kp STAR   &kp PLUS   &kp BSLH  &kp FSLH   &kp MINUS  &kp LT    &kp GT     &kp DQT
+                         &trans     &mo 1      &kp BSPC  &kp RET    &mo 3      &trans
+                        >;
+                };
+
+                num_layer {
+                        bindings = <
+   &none          &none      &none      &none      &kp UNDER  &kp MINUS  &kp N7  &kp N8  &kp N9  &none
+   &kp LC(Z)      &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp PLUS   &kp EQUAL  &kp N4  &kp N5  &kp N6  &none
+   &kp LC(LS(Z))  &none      &none      &none      &kp DOT    &kp N0     &kp N1  &kp N2  &kp N3  &none
+                             &trans     &mo 1      &trans     &trans     &mo 2   &trans
+                        >;
+                };
+        };
+};
