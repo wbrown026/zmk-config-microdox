@@ -1,5 +1,5 @@
 include:
   - board: nice_nano@1.0.0
-    shield: microdox_left
+    shield: microdox_v2_left
   - board: nice_nano@1.0.0
-    shield: microdox_right
+    shield: microdox_v2_right
