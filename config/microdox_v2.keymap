@@ -17,7 +17,7 @@
    &kp V  &kp L  &kp H       &kp G       &kp K      &kp Q      &kp F       &kp O       &kp U     &kp J
    &kp S  &kp R  &mt LALT N  &mt LGUI T  &kp B      &kp Y      &mt LGUI C  &mt LALT A  &kp E     &kp I
    &kp Z  &kp X  &kp M       &kp D       &kp P      &kp SQT    &kp W       &kp DOT     &kp SEMI  &kp COMMA
-                 &kp ESC     &kp LSHFT   &kp SPACE  &kp LCTRL  &mo 2       &kp TAB
+                 &kp ESC     &kp LSHFT   &kp SPACE  &kp LCTRL  &to 2       &kp TAB
                         >;
                 };
 
@@ -26,7 +26,7 @@
    &kp GRAVE  &kp TILDE  &kp HASH   &kp AMPS   &kp PIPE  &kp CARET  &kp LBRC   &kp RBRC  &kp LBKT   &kp RBKT
    &kp EXCL   &kp UNDER  &kp COLON  &kp EQUAL  &kp DLLR  &kp AT     &kp LPAR   &kp RPAR  &kp UNDER  &kp SEMI
    &kp PRCNT  &kp QMARK  &kp STAR   &kp PLUS   &kp BSLH  &kp FSLH   &kp MINUS  &kp LT    &kp GT     &kp DQT
-                         &trans     &mo 1      &kp BSPC  &kp RET    &mo 3      &trans
+                         &trans     &to 1      &kp BSPC  &kp RET    &to 3      &trans
                         >;
                 };
 
@@ -35,7 +35,7 @@
    &bt BT_CLR     &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &kp UNDER  &kp MINUS  &kp N7  &kp N8  &kp N9  &none
    &kp LC(Z)      &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp PLUS   &kp EQUAL  &kp N4  &kp N5  &kp N6  &none
    &kp LC(LS(Z))  &none         &none         &none         &kp DOT    &kp N0     &kp N1  &kp N2  &kp N3  &none
-                                &trans        &mo 1         &trans     &trans     &mo 2   &trans
+                                &trans        &to 1         &trans     &trans     &to 2   &trans
                         >;
                 };
         };
