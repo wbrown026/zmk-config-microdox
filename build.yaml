@@ -1,5 +1,27 @@
-include:
-  - board: nice_nano@1.0.0
-    shield: microdox_v2_left
-  - board: nice_nano@1.0.0
-    shield: microdox_v2_right
+# build.yaml
+name: microdox_nice_nano_split
+version: 1.0.0
+
+boards:
+  left:
+    id: microdox_nano_left@1.0.0
+    mcu: nrf52840
+    bootloader: uf2
+    vendor_id: 0xFEED
+    product_id: 0x6060
+  right:
+    id: microdox_nano_right@1.0.0
+    mcu: nrf52840
+    bootloader: uf2
+    vendor_id: 0xFEED
+    product_id: 0x6061
+
+build:
+  features:
+    - split
+    - ble
+  keymap: default
+
+firmware:
+  left: microdox_nano_left.uf2
+  right: microdox_nano_right.uf2
